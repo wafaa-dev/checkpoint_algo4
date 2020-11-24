@@ -1,0 +1,43 @@
+ALGORITHM sort_cards
+VAR
+   input_array :array of integer
+   input_stk : STACK;
+   temporary_stk :STACK ;
+   sorted_stk ;
+   n,i : integer ;
+   top_element:integer
+   new_element :integer 
+
+
+BEGIN
+n= input_array.length
+//converting the initial array to a stack
+for i=0 ; i< n i++ do 
+{
+
+input_stk.push [input_array[i]]
+}
+end for 
+
+//sorting the input stack
+
+WHILE (NOT input_stk.isEmpty()) DO
+
+    if input_stk(top_element) < temporary_element 
+    
+       temporary_stk.push (input_stk.pop());
+    
+   END_WHILE
+ 
+// inserting new element 
+
+   Write("give the element to insert");
+   read (new_element)
+
+//sorting the new element
+WHILE (NOT temporary_stk.isEmpty()) DO
+
+    if new_element < temporary_element
+    
+    sorted_stk.push (temporary_stk.pop());
+END_WHILE
